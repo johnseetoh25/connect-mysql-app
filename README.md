@@ -50,7 +50,7 @@ const getAllPanels = (req, res) => {
 export { getAllPanels };
 ```
 - Import the database connection instance db from 'warehouse-db.js'.
-- Define the getAllPanels function, which executes the SQL query ```SELECT * FROM ``` panels to get all records from the panels table.
+- Define the getAllPanels function, which executes the SQL query ```SELECT * FROM panels ```to get all records from the panels table.
 - If the query fails, return a **500** status code and error message; if the query succeeds, return the result in **JSON** format.
 
 ## Summary ##
