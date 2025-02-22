@@ -27,7 +27,6 @@ db.connect((err) => {
 
 export default db;
 ```
->
 - Use the mysql2 library to create a database connection instance db, configuring the hostname, username, password, and database name of the database.
 - Try to connect to the database. If the connection fails, output the error information. If successful, output a prompt indicating successful connection.
 
@@ -50,7 +49,9 @@ const getAllPanels = (req, res) => {
 
 export { getAllPanels };
 ```
->
-- Import the database connection instance db from warehouse-db.js.
-- Define the getAllPanels function, which executes the SQL query SELECT * FROM panels to get all records from the panels table.
-- If the query fails, return a 500 status code and error message; if the query succeeds, return the result in JSON format.
+- Import the database connection instance db from 'warehouse-db.js'.
+- Define the getAllPanels function, which executes the SQL query ```SELECT * FROM ``` panels to get all records from the panels table.
+- If the query fails, return a **500** status code and error message; if the query succeeds, return the result in **JSON** format.
+
+## Summary ##
+The current function of this repository is to establish a connection with the MySQL database and provide a simple controller function for querying the data of the 'panels' table. More database operation functions may be expanded on this basis in the future.
